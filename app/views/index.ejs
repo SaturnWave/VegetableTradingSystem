@@ -1,0 +1,44 @@
+<%- include ('partials/header.ejs') %>
+<%- include ('partials/main_nav.ejs') %>
+
+
+
+<main class="container">
+  <div class="jumbotron">
+    <h1 class="display-4">Arcan Caglayan</h1>
+    <p class="lead">Software Engineering Student with a passion for Physics and a keen interest in AI, History, Politics, and Technology.</p>
+    
+    
+    <h2>About Me</h2>
+    <p>I am a dedicated software engineering student with a deep passion for physics. Throughout my academic journey, I have developed expertise in a variety of areas, including AI, history, politics, and technology. My diverse set of skills and interests allow me to approach problems with a unique perspective, combining technological know-how with insights from physics and humanities.</p>
+    
+    <h2>Projects</h2>
+    <div class="project-card">
+      <h3>ISS Tracker</h3>
+      <p>A cutting-edge project that tracks the International Space Station in real-time, providing users with up-to-date information on its location and trajectory.</p>
+      <!-- You can add a link to the project or its codebase here -->
+      <!-- <a href="#" class="btn btn-primary">View Project</a> -->
+    </div>
+
+    <h2>Connect</h2>
+    <p>If you wish to learn more about my work or collaborate on exciting projects, feel free to connect with me. I'm always open to new opportunities and challenges.</p>
+  </div>
+  
+<script>
+  // Sample JavaScript to add some interactivity
+  const jumbotron = document.querySelector('.jumbotron');
+  jumbotron.addEventListener('mouseenter', () => {
+      jumbotron.style.backgroundColor = "#f8f9fa"; // Light grey color on hover
+  });
+  jumbotron.addEventListener('mouseleave', () => {
+      jumbotron.style.backgroundColor = ""; // Reset to default on mouse leave
+  });
+</script>
+</main>
+
+
+<%- include ('partials/bottom_nav.ejs') %> 
+<%- include ('partials/footer.ejs') %>
+
+
+
