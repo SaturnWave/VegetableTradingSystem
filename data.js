@@ -50,7 +50,7 @@ const vegetables = [
         image:'https://images.unsplash.com/photo-1581093455538-1a5b8b5e9c9f?ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8YnJvY2NvbGklMjB3ZWF0aGVyJTIwY2FyfGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&w=1000&q=80'
     }
 ];
-
+module.exports = vegetables;
 const fruits = [
     { 
         name: 'apple', 
@@ -93,7 +93,7 @@ const fruits = [
         image: 'https://images.unsplash.com/photo-1581093455538-1a5b8b5e9c9f?ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8YnJvY2NvbGklMjB3ZWF0aGVyJTIwY2FyfGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&w=1000&q=80'
     }
 ];
-
+module.exports = fruits;
 const farmLands = [
     {
         landId: '1', 
@@ -103,3 +103,5 @@ const farmLands = [
         landImage: 'https://images.unsplash.com/photo-1581093455538-1a5b8b5e9c9f?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8bGFuZCUyMGltYWdlJTIwZm9yJTIwZmFybXxlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&w=1000&q=80'
     }
 ];
+
+module.exports = farmLands;

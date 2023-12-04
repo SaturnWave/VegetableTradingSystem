@@ -1,6 +1,6 @@
 process.env.NODE_ENV = process.env.NODE_ENV || 'development';
 var express = require('./config/express');
-var express = require('data');
+// var express = require('data');
 
 var app = express();
 // var app = express(vegetables, fruits, farmLands); 
