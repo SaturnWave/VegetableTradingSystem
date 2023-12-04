@@ -1,27 +1,31 @@
-var express = require('express');
-var router = express.Router();
+module.exports = function(vegetables, fruits, farmLands) {
+  var express = require('express');
+  var router = express.Router();
 
-/* GET home page. */
+  // Home page route
+  router.get('/', function(req, res) {
+      res.render('index', { title: 'Home', vegetables, fruits, farmLands });
+  });
 
-router.get('/', function(req, res, next) {
-  res.render('index', { title: 'Home' });
-});
+  // Additional routes can be added below with similar structure
+  router.get('/about', function(req, res) {
+      res.render('about', { title: 'About' });
+  });
 
-router.get('/home', function(req, res, next) {
-  res.render('index', { title: 'Home' });
-});
+  router.get('/projects', function(req, res) {
+      res.render('projects', { title: 'Projects' });
+  });
 
-router.get('/about', function(req, res, next) {
-  res.render('about', { title: 'About' });
-});
-router.get('/projects', function(req, res, next) {
-  res.render('projects', { title: 'Projects' });
-});
-router.get('/contact', function(req, res, next) {
-  res.render('contact', { title: 'Contact' });
-});
-router.get('/services', function(req, res, next) {
-  res.render('services', { title: 'Services' });
-});
+  router.get('/contact', function(req, res) {
+      res.render('contact', { title: 'Contact' });
+  });
 
-module.exports = router;
+  router.get('/services', function(req, res) {
+      res.render('services', { title: 'Services' });
+  });
+
+  // ... add any other routes you need
+
+  return router;
+};
+
